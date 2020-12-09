@@ -45,6 +45,10 @@ const getWeatherData = async (city) => {
     `https://community-open-weather-map.p.rapidapi.com/find?q=${city}&units=metric&lang=sp`,
     {
       method: "GET",
+      headers: {
+        "x-rapidapi-key": "be6ca72279msh21901a33332576bp1cf9abjsn47aec49a9b0d",
+        "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+      },
     }
   );
   const data = await res.json();
