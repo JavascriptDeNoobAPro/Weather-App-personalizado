@@ -1,0 +1,142 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{           
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 32.5rem;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.29);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.29);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.29);
+}
+
+.container.day{
+    background-image: url("images/day-time.jpg"); /* @kiralov345 */
+    background-size: cover;                 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container.night{
+    background-image: url("images/rainy.jpg"); /* @kiralov345 */
+    background-size: cover;                 
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.inputTemp{
+  margin: 1rem auto;
+  width: 80%;
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__submit{
+    display: flex;
+}
+
+.search{
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: none;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.29);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.29);
+    box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.29);
+}
+
+.search:focus{
+    outline:0;
+}
+
+.inputTemp__number{
+    display: flex;
+    align-items: center;
+}
+
+.inputTemp__celsius {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.inputTemp__symbol{
+    font-size: 2rem;
+    color:white;
+}
+
+.location{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location__date {
+    margin: 1.5rem;
+}
+
+.inputTemp__description, .location__city{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.container.night .inputTemp__description{
+    color: white;
+}
+
+.container.night .location__city{
+    color: white;
+}
+
+.weather{
+    flex:0.1;
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.weather__min>span{
+    font-size: 1.4rem;
+    color: midnightblue;
+}
+
+.container.night .weather__min>span, .container.night .weather__max>span{
+    color:white;
+}
+
+.weather__max>span{
+    font-size: 1.4rem;
+    color: tomato;
+}
+
+.search__submit > button{
+    visibility: hidden;
+}
+
