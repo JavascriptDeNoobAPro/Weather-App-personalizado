@@ -46,7 +46,7 @@ const getWeatherData = async (city) => {
     {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "be6ca72279msh21901a33332576bp1cf9abjsn47aec49a9b0d",
+        "x-rapidapi-key": "",
         "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
       },
     }
